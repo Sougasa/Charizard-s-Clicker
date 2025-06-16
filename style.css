@@ -1,0 +1,212 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #ffbf1e, #fc850f, #f4f991);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    user-select: none;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#botão {
+    height: 200px;
+    width: 250px;
+    background-color: rgb(226, 171, 51);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botão:hover {
+    transform: scale(1.05);
+    font-size: 24px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+    background-color: rgb(230, 131, 131);
+}
+
+
+#comprar1 {
+    /* display: none; */ /* Remova ou comente esta linha */
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, opacity 0.3s;
+    opacity: 0.5; /* Começa desabilitado */
+    pointer-events: none;
+}
+
+#comprar1:hover {
+    background-color: #45a049;
+}
+
+#botão_transcender {
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(226, 51, 51);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticker {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 150px; /* você pode ajustar o tamanho aqui */
+}
+
+#musica {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* você pode ajustar o tamanho aqui */
+}
+
+#titulo {
+    color:orangered
+}
+
+#começar {
+    border:#45a049 solid 2px;
+    background-color: #45a049;
+    border-width: 2px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+#começar:hover {
+    background-color: #4CAF50;
+    border:#4CAF50 solid 2px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+#autor {
+    color: blue;
+}
+
+.aumentar_tamanho{
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+    font-weight: bold;
+}
+
+.falling {
+  position: absolute;
+  top: -100px;
+  width: 50px; /* tamanho da imagem */
+  animation: fall linear infinite;
+}
+
+.falling:nth-child(1) {
+  left: 10%;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.falling:nth-child(2) {
+  left: 30%;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.falling:nth-child(3) {
+  left: 50%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+.falling:nth-child(4) {
+  left: 70%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+#cute {
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#finalizar {
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(86, 51, 226);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none; /* Inicialmente escondido */
+}
+
+img {
+    user-select: none; /* Impede selecionar */
+    -webkit-user-drag: none; /* Impede arrastar no Chrome/Safari */
+}
